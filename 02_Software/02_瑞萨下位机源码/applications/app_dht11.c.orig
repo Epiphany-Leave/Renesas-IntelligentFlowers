@@ -1,0 +1,17 @@
+#include "app.h"
+#include <devices.h>
+#include <errno.h>
+#include <libs.h>
+#include "hal_data.h"
+#include <stdio.h>
+
+ void DeviceTest(struct DHT11Dev *pDevice)
+ {
+        if(pDevice->Read(pDevice) == ESUCCESS)
+        {
+            printf("环境温度: %d℃ \t 环境湿度: %d℃ \r", pDevice->tempture, pDevice->humidity);
+        }
+		else
+			printf("ERROR\r\n");
+        mdelay(200);
+ }

@@ -1,0 +1,2823 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\wifi_bt.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\wifi_bt.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Sun Apr 20 17:06:45 2025
+<BR><P>
+<H3>Maximum Stack Usage =        960 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+Reset_Handler &rArr; main &rArr; hal_entry &rArr; WiFiTCP_Init &rArr; WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[d4]">bsp_prv_software_delay_loop</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d4]">bsp_prv_software_delay_loop</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">BusFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[54]">DHT11DevInit</a> from dev_dht11.o(.text.DHT11DevInit) referenced from dev_dht11.o(.data.gDevice)
+ <LI><a href="#[55]">DHT11DevRead</a> from dev_dht11.o(.text.DHT11DevRead) referenced from dev_dht11.o(.data.gDevice)
+ <LI><a href="#[8]">DebugMon_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[56]">GPTDrvInit</a> from drv_gpt.o(.text.GPTDrvInit) referenced from drv_gpt.o(.data.gGPT1Device)
+ <LI><a href="#[56]">GPTDrvInit</a> from drv_gpt.o(.text.GPTDrvInit) referenced from drv_gpt.o(.data.gGPTDevice)
+ <LI><a href="#[59]">GPTDrvRead</a> from drv_gpt.o(.text.GPTDrvRead) referenced from drv_gpt.o(.data.gGPT1Device)
+ <LI><a href="#[59]">GPTDrvRead</a> from drv_gpt.o(.text.GPTDrvRead) referenced from drv_gpt.o(.data.gGPTDevice)
+ <LI><a href="#[57]">GPTDrvStart</a> from drv_gpt.o(.text.GPTDrvStart) referenced from drv_gpt.o(.data.gGPT1Device)
+ <LI><a href="#[57]">GPTDrvStart</a> from drv_gpt.o(.text.GPTDrvStart) referenced from drv_gpt.o(.data.gGPTDevice)
+ <LI><a href="#[58]">GPTDrvStop</a> from drv_gpt.o(.text.GPTDrvStop) referenced from drv_gpt.o(.data.gGPT1Device)
+ <LI><a href="#[58]">GPTDrvStop</a> from drv_gpt.o(.text.GPTDrvStop) referenced from drv_gpt.o(.data.gGPTDevice)
+ <LI><a href="#[5a]">GPTDrvTimeout</a> from drv_gpt.o(.text.GPTDrvTimeout) referenced from drv_gpt.o(.data.gGPT1Device)
+ <LI><a href="#[5a]">GPTDrvTimeout</a> from drv_gpt.o(.text.GPTDrvTimeout) referenced from drv_gpt.o(.data.gGPTDevice)
+ <LI><a href="#[65]">HAL_Delay</a> from drv_systick.o(.text.HAL_Delay) referenced from drv_systick.o(.data.gSystickDevice)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[51]">IODrvInit</a> from drv_gpio.o(.text.IODrvInit) referenced from drv_gpio.o(.data.gDHTIODev)
+ <LI><a href="#[51]">IODrvInit</a> from drv_gpio.o(.text.IODrvInit) referenced from drv_gpio.o(.data.gKeyDev)
+ <LI><a href="#[53]">IODrvRead</a> from drv_gpio.o(.text.IODrvRead) referenced from drv_gpio.o(.data.gDHTIODev)
+ <LI><a href="#[52]">IODrvWrite</a> from drv_gpio.o(.text.IODrvWrite) referenced from drv_gpio.o(.data.gDHTIODev)
+ <LI><a href="#[5e]">MHDrvInit</a> from dev_mh.o(.text.MHDrvInit) referenced from dev_mh.o(.data.gMHDev)
+ <LI><a href="#[5f]">MHDrvRead</a> from dev_mh.o(.text.MHDrvRead) referenced from dev_mh.o(.data.gMHDev)
+ <LI><a href="#[60]">MQDrvInit</a> from dev_mq.o(.text.MQDrvInit) referenced from dev_mq.o(.data.gMQDev)
+ <LI><a href="#[61]">MQDrvRead</a> from dev_mq.o(.text.MQDrvRead) referenced from dev_mq.o(.data.gMQDev)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[1]">NMI_Handler</a> from bsp_group_irq.o(.text.NMI_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[62]">PHDrvInit</a> from dev_ph.o(.text.PHDrvInit) referenced from dev_ph.o(.data.gPHDev)
+ <LI><a href="#[63]">PHDrvRead</a> from dev_ph.o(.text.PHDrvRead) referenced from dev_ph.o(.data.gPHDev)
+ <LI><a href="#[9]">PendSV_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[1f]">R_ADC_Calibrate</a> from r_adc.o(.text.R_ADC_Calibrate) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[21]">R_ADC_CallbackSet</a> from r_adc.o(.text.R_ADC_CallbackSet) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[22]">R_ADC_Close</a> from r_adc.o(.text.R_ADC_Close) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[23]">R_ADC_InfoGet</a> from r_adc.o(.text.R_ADC_InfoGet) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[20]">R_ADC_OffsetSet</a> from r_adc.o(.text.R_ADC_OffsetSet) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[17]">R_ADC_Open</a> from r_adc.o(.text.R_ADC_Open) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[1d]">R_ADC_Read</a> from r_adc.o(.text.R_ADC_Read) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[1e]">R_ADC_Read32</a> from r_adc.o(.text.R_ADC_Read32) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[18]">R_ADC_ScanCfg</a> from r_adc.o(.text.R_ADC_ScanCfg) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[1a]">R_ADC_ScanGroupStart</a> from r_adc.o(.text.R_ADC_ScanGroupStart) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[19]">R_ADC_ScanStart</a> from r_adc.o(.text.R_ADC_ScanStart) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[1b]">R_ADC_ScanStop</a> from r_adc.o(.text.R_ADC_ScanStop) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[1c]">R_ADC_StatusGet</a> from r_adc.o(.text.R_ADC_StatusGet) referenced from r_adc.o(.rodata.g_adc_on_adc)
+ <LI><a href="#[44]">R_GPT_CallbackSet</a> from r_gpt.o(.text.R_GPT_CallbackSet) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[45]">R_GPT_Close</a> from r_gpt.o(.text.R_GPT_Close) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3f]">R_GPT_Disable</a> from r_gpt.o(.text.R_GPT_Disable) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[41]">R_GPT_DutyCycleSet</a> from r_gpt.o(.text.R_GPT_DutyCycleSet) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3e]">R_GPT_Enable</a> from r_gpt.o(.text.R_GPT_Enable) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[42]">R_GPT_InfoGet</a> from r_gpt.o(.text.R_GPT_InfoGet) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3a]">R_GPT_Open</a> from r_gpt.o(.text.R_GPT_Open) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[40]">R_GPT_PeriodSet</a> from r_gpt.o(.text.R_GPT_PeriodSet) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3d]">R_GPT_Reset</a> from r_gpt.o(.text.R_GPT_Reset) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3b]">R_GPT_Start</a> from r_gpt.o(.text.R_GPT_Start) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[43]">R_GPT_StatusGet</a> from r_gpt.o(.text.R_GPT_StatusGet) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[3c]">R_GPT_Stop</a> from r_gpt.o(.text.R_GPT_Stop) referenced from r_gpt.o(.rodata.g_timer_on_gpt)
+ <LI><a href="#[28]">R_ICU_ExternalIrqCallbackSet</a> from r_icu.o(.text.R_ICU_ExternalIrqCallbackSet) referenced from r_icu.o(.rodata.g_external_irq_on_icu)
+ <LI><a href="#[29]">R_ICU_ExternalIrqClose</a> from r_icu.o(.text.R_ICU_ExternalIrqClose) referenced from r_icu.o(.rodata.g_external_irq_on_icu)
+ <LI><a href="#[27]">R_ICU_ExternalIrqDisable</a> from r_icu.o(.text.R_ICU_ExternalIrqDisable) referenced from r_icu.o(.rodata.g_external_irq_on_icu)
+ <LI><a href="#[26]">R_ICU_ExternalIrqEnable</a> from r_icu.o(.text.R_ICU_ExternalIrqEnable) referenced from r_icu.o(.rodata.g_external_irq_on_icu)
+ <LI><a href="#[25]">R_ICU_ExternalIrqOpen</a> from r_icu.o(.text.R_ICU_ExternalIrqOpen) referenced from r_icu.o(.rodata.g_external_irq_on_icu)
+ <LI><a href="#[2b]">R_IOPORT_Close</a> from r_ioport.o(.text.R_IOPORT_Close) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[2a]">R_IOPORT_Open</a> from r_ioport.o(.text.R_IOPORT_Open) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[2d]">R_IOPORT_PinCfg</a> from r_ioport.o(.text.R_IOPORT_PinCfg) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[2e]">R_IOPORT_PinEventInputRead</a> from r_ioport.o(.text.R_IOPORT_PinEventInputRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[2f]">R_IOPORT_PinEventOutputWrite</a> from r_ioport.o(.text.R_IOPORT_PinEventOutputWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[30]">R_IOPORT_PinRead</a> from r_ioport.o(.text.R_IOPORT_PinRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[31]">R_IOPORT_PinWrite</a> from r_ioport.o(.text.R_IOPORT_PinWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[2c]">R_IOPORT_PinsCfg</a> from r_ioport.o(.text.R_IOPORT_PinsCfg) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[32]">R_IOPORT_PortDirectionSet</a> from r_ioport.o(.text.R_IOPORT_PortDirectionSet) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[33]">R_IOPORT_PortEventInputRead</a> from r_ioport.o(.text.R_IOPORT_PortEventInputRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[34]">R_IOPORT_PortEventOutputWrite</a> from r_ioport.o(.text.R_IOPORT_PortEventOutputWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[35]">R_IOPORT_PortRead</a> from r_ioport.o(.text.R_IOPORT_PortRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[36]">R_IOPORT_PortWrite</a> from r_ioport.o(.text.R_IOPORT_PortWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[4d]">R_SCI_UART_Abort</a> from r_sci_uart.o(.text.R_SCI_UART_Abort) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[4b]">R_SCI_UART_BaudSet</a> from r_sci_uart.o(.text.R_SCI_UART_BaudSet) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[4e]">R_SCI_UART_CallbackSet</a> from r_sci_uart.o(.text.R_SCI_UART_CallbackSet) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[4f]">R_SCI_UART_Close</a> from r_sci_uart.o(.text.R_SCI_UART_Close) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[4c]">R_SCI_UART_InfoGet</a> from r_sci_uart.o(.text.R_SCI_UART_InfoGet) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[48]">R_SCI_UART_Open</a> from r_sci_uart.o(.text.R_SCI_UART_Open) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[49]">R_SCI_UART_Read</a> from r_sci_uart.o(.text.R_SCI_UART_Read) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[50]">R_SCI_UART_ReadStop</a> from r_sci_uart.o(.text.R_SCI_UART_ReadStop) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[4a]">R_SCI_UART_Write</a> from r_sci_uart.o(.text.R_SCI_UART_Write) referenced from r_sci_uart.o(.rodata.g_uart_on_sci)
+ <LI><a href="#[0]">Reset_Handler</a> from startup.o(.text.Reset_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[13]">RingBufferClear</a> from ring_buffer.o(.text.RingBufferClear) referenced 2 times from ring_buffer.o(.text.RingBufferNew)
+ <LI><a href="#[14]">RingBufferFree</a> from ring_buffer.o(.text.RingBufferFree) referenced 2 times from ring_buffer.o(.text.RingBufferNew)
+ <LI><a href="#[12]">RingBufferRead</a> from ring_buffer.o(.text.RingBufferRead) referenced 2 times from ring_buffer.o(.text.RingBufferNew)
+ <LI><a href="#[11]">RingBufferWrite</a> from ring_buffer.o(.text.RingBufferWrite) referenced 2 times from ring_buffer.o(.text.RingBufferNew)
+ <LI><a href="#[7]">SVC_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[6]">SecureFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[a]">SysTick_Handler</a> from drv_systick.o(.text.SysTick_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[64]">SystickInit</a> from drv_systick.o(.text.SystickInit) referenced from drv_systick.o(.data.gSystickDevice)
+ <LI><a href="#[5b]">UARTDrvInit</a> from drv_uart.o(.text.UARTDrvInit) referenced from drv_uart.o(.data.gLogDevice)
+ <LI><a href="#[5b]">UARTDrvInit</a> from drv_uart.o(.text.UARTDrvInit) referenced from drv_uart.o(.data.gWiFiDevice)
+ <LI><a href="#[5d]">UARTDrvRead</a> from drv_uart.o(.text.UARTDrvRead) referenced from drv_uart.o(.data.gLogDevice)
+ <LI><a href="#[5d]">UARTDrvRead</a> from drv_uart.o(.text.UARTDrvRead) referenced from drv_uart.o(.data.gWiFiDevice)
+ <LI><a href="#[5c]">UARTDrvWrite</a> from drv_uart.o(.text.UARTDrvWrite) referenced from drv_uart.o(.data.gLogDevice)
+ <LI><a href="#[5c]">UARTDrvWrite</a> from drv_uart.o(.text.UARTDrvWrite) referenced from drv_uart.o(.data.gWiFiDevice)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[16]">_sputc</a> from printfa.o(i._sputc) referenced from printfa.o(i.__0sprintf)
+ <LI><a href="#[15]">fputc</a> from printf.o(.text.fputc) referenced from printfa.o(i.__0printf)
+ <LI><a href="#[f]">gpt_counter_overflow_isr</a> from r_gpt.o(.text.gpt_counter_overflow_isr) referenced 4 times from vector_data.o(.application_vectors)
+ <LI><a href="#[39]">gpt_timer2_callback</a> from kalman.o(.text.gpt_timer2_callback) referenced from hal_data.o(.rodata.g_timer2_cfg)
+ <LI><a href="#[24]">key_external_irq_callback</a> from drv_gpio.o(.text.key_external_irq_callback) referenced from common_data.o(.rodata.g_external_irq6_cfg)
+ <LI><a href="#[24]">key_external_irq_callback</a> from drv_gpio.o(.text.key_external_irq_callback) referenced from common_data.o(.rodata.g_external_irq8_cfg)
+ <LI><a href="#[24]">key_external_irq_callback</a> from drv_gpio.o(.text.key_external_irq_callback) referenced from common_data.o(.rodata.g_external_irq9_cfg)
+ <LI><a href="#[10]">r_icu_isr</a> from r_icu.o(.text.r_icu_isr) referenced 4 times from vector_data.o(.application_vectors)
+ <LI><a href="#[e]">sci_uart_eri_isr</a> from r_sci_uart.o(.text.sci_uart_eri_isr) referenced 2 times from vector_data.o(.application_vectors)
+ <LI><a href="#[b]">sci_uart_rxi_isr</a> from r_sci_uart.o(.text.sci_uart_rxi_isr) referenced 2 times from vector_data.o(.application_vectors)
+ <LI><a href="#[d]">sci_uart_tei_isr</a> from r_sci_uart.o(.text.sci_uart_tei_isr) referenced 2 times from vector_data.o(.application_vectors)
+ <LI><a href="#[c]">sci_uart_txi_isr</a> from r_sci_uart.o(.text.sci_uart_txi_isr) referenced 2 times from vector_data.o(.application_vectors)
+ <LI><a href="#[37]">timer0_callback</a> from drv_gpt.o(.text.timer0_callback) referenced from hal_data.o(.rodata.g_timer0_cfg)
+ <LI><a href="#[38]">timer1_callback</a> from drv_gpt.o(.text.timer1_callback) referenced from hal_data.o(.rodata.g_timer1_cfg)
+ <LI><a href="#[46]">uart6_callback</a> from drv_uart.o(.text.uart6_callback) referenced from hal_data.o(.rodata.g_uart6_cfg)
+ <LI><a href="#[47]">uart7_callback</a> from drv_uart.o(.text.uart7_callback) referenced from hal_data.o(.rodata.g_uart7_cfg)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[66]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_SetDuty
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[f0]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferRead
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferWrite
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevGetLocalIP
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+</UL>
+
+<P><STRONG><a name="[fe]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[142]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[143]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[144]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[69]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferClear
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiNetDataPreDeal
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+</UL>
+
+<P><STRONG><a name="[fd]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[145]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[6b]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[9a]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceFind
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODeviceFind
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiNetDataPreDeal
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceFind
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+</UL>
+
+<P><STRONG><a name="[106]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetRPTM
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevReset
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Data
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevGetLocalIP
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevEnableDHCP
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetWorkType
+</UL>
+
+<P><STRONG><a name="[9f]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IOGetDecvice
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODrvInit
+</UL>
+
+<P><STRONG><a name="[6c]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_WaterPump
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kalmanFilter
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fuseSensorData
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[70]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_WaterPump
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kalmanFilter
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+</UL>
+
+<P><STRONG><a name="[71]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[72]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kalmanFilter
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fuseSensorData
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[73]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_ddiv &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kalmanFilter
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fuseSensorData
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[8c]"></a>__aeabi_dcmple</STRONG> (Thumb, 54 bytes, Stack size 12 bytes, dcmple.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_dcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_WaterPump
+</UL>
+
+<P><STRONG><a name="[8b]"></a>__aeabi_dcmpge</STRONG> (Thumb, 54 bytes, Stack size 12 bytes, dcmpge.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_dcmpge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_WaterPump
+</UL>
+
+<P><STRONG><a name="[74]"></a>__aeabi_i2d</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dflti.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_i2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+</UL>
+
+<P><STRONG><a name="[7a]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750Data
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+</UL>
+
+<P><STRONG><a name="[75]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_d2f
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+</UL>
+
+<P><STRONG><a name="[146]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[141]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[68]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[147]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[67]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[148]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[6d]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[149]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[14a]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[76]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+</UL>
+
+<P><STRONG><a name="[14b]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
+
+<P><STRONG><a name="[6f]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+
+<P><STRONG><a name="[6e]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+</UL>
+
+<P><STRONG><a name="[77]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[13e]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[78]"></a>BH1750Data</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, app_bh1750.o(.text.BH1750Data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = BH1750Data &rArr; LIght_Intensity &rArr; Single_Write_BH1750 &rArr; BH1750_IIC_write_byte &rArr; BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[7d]"></a>BH1750_IIC_ACK</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_ACK))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = BH1750_IIC_ACK &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[7e]"></a>BH1750_IIC_Delay</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_stop
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_ACK
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_NACK
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_write_byte
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_start
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Init
+</UL>
+
+<P><STRONG><a name="[80]"></a>BH1750_IIC_Get_ack</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_Get_ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_Pin_Output
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_Pin_IN
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_SDA_Read
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_write_byte
+</UL>
+
+<P><STRONG><a name="[84]"></a>BH1750_IIC_Init</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = BH1750_IIC_Init &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[85]"></a>BH1750_IIC_NACK</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_NACK))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = BH1750_IIC_NACK &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[86]"></a>BH1750_IIC_read_byte</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_read_byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = BH1750_IIC_read_byte &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_Pin_Output
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDA_Pin_IN
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_SDA_Read
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[87]"></a>BH1750_IIC_start</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = BH1750_IIC_start &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Single_Write_BH1750
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[88]"></a>BH1750_IIC_stop</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = BH1750_IIC_stop &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Single_Write_BH1750
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[89]"></a>BH1750_IIC_write_byte</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, drv_bh1750_iic.o(.text.BH1750_IIC_write_byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = BH1750_IIC_write_byte &rArr; BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Single_Write_BH1750
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+</UL>
+
+<P><STRONG><a name="[8a]"></a>Control_WaterPump</STRONG> (Thumb, 224 bytes, Stack size 32 bytes, kalman.o(.text.Control_WaterPump))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = Control_WaterPump &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dcmple
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dcmpge
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_timer2_callback
+</UL>
+
+<P><STRONG><a name="[12d]"></a>DHT11GetDevice</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dev_dht11.o(.text.DHT11GetDevice))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[8]"></a>DebugMon_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[14c]"></a>Default_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler), UNUSED)
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[9]"></a>PendSV_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[7]"></a>SVC_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[6]"></a>SecureFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[8e]"></a>DeviceData</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, app_dht11.o(.text.DeviceData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = DeviceData &rArr; mdelay &rArr; TimerDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[8f]"></a>DispApp_Init</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, app_disp.o(.text.DispApp_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = DispApp_Init &rArr; ST7735_FillScreen &rArr; ST7735_FillRectangle &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillScreen
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XTFT_Init_GPIO
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[96]"></a>GPTTimerDevicesCreate</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, drv_gpt.o(.text.GPTTimerDevicesCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = GPTTimerDevicesCreate &rArr; GPTDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvInit
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDevicesRegister
+</UL>
+
+<P><STRONG><a name="[ad]"></a>GetADC_Average</STRONG> (Thumb, 320 bytes, Stack size 16 bytes, drv_adc.o(.text.GetADC_Average))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GetADC_Average
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+</UL>
+
+<P><STRONG><a name="[98]"></a>GptPWMDrvInit</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, drv_gpt_pwm.o(.text.GptPWMDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = GptPWMDrvInit &rArr; PWM_SetDuty &rArr; R_GPT_DutyCycleSet &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_SetDuty
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[12e]"></a>HAL_GetTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, drv_systick.o(.text.HAL_GetTick))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_external_irq_callback
+</UL>
+
+<P><STRONG><a name="[8d]"></a>IODeviceFind</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, dev_gpio.o(.text.IODeviceFind))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = IODeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT11DevInit
+</UL>
+
+<P><STRONG><a name="[9d]"></a>IODeviceInsert</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, dev_gpio.o(.text.IODeviceInsert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = IODeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODevicesCreate
+</UL>
+
+<P><STRONG><a name="[9b]"></a>IODeviceList</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, dev_gpio.o(.text.IODeviceList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = IODeviceList &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODevicesRegister
+</UL>
+
+<P><STRONG><a name="[9c]"></a>IODevicesCreate</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, drv_gpio.o(.text.IODevicesCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = IODevicesCreate &rArr; IODeviceInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODevicesRegister
+</UL>
+
+<P><STRONG><a name="[9e]"></a>IODevicesRegister</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dev_gpio.o(.text.IODevicesRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = IODevicesRegister &rArr; IODeviceList &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODeviceList
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODevicesCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a0]"></a>IOGetDecvice</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, drv_gpio.o(.text.IOGetDecvice))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = IOGetDecvice &rArr; strcmp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a1]"></a>KeyProcessJitter</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, drv_gpio.o(.text.KeyProcessJitter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = KeyProcessJitter &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a2]"></a>KeyProcessMotor</STRONG> (Thumb, 218 bytes, Stack size 32 bytes, drv_gpio.o(.text.KeyProcessMotor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = KeyProcessMotor &rArr; ST7735_DrawString &rArr; ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a4]"></a>KeyProcessWater</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, drv_gpio.o(.text.KeyProcessWater))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = KeyProcessWater &rArr; ST7735_DrawString &rArr; ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a5]"></a>KeyProcessWind</STRONG> (Thumb, 224 bytes, Stack size 32 bytes, drv_gpio.o(.text.KeyProcessWind))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = KeyProcessWind &rArr; ST7735_DrawString &rArr; ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[91]"></a>LCD_Init</STRONG> (Thumb, 584 bytes, Stack size 104 bytes, dev_lcd.o(.text.LCD_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = LCD_Init &rArr; WriteData &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteComm
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DispApp_Init
+</UL>
+
+<P><STRONG><a name="[79]"></a>LIght_Intensity</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, dev_bh1750_1.o(.text.LIght_Intensity))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = LIght_Intensity &rArr; Single_Write_BH1750 &rArr; BH1750_IIC_write_byte &rArr; BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Single_Write_BH1750
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750Data
+</UL>
+
+<P><STRONG><a name="[ab]"></a>MHData</STRONG> (Thumb, 296 bytes, Stack size 24 bytes, dev_mh.o(.text.MHData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MHData &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MH_PinRead
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetADC_Average
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[12a]"></a>MHGetDevice</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dev_mh.o(.text.MHGetDevice))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[ae]"></a>MQData</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, dev_mq.o(.text.MQData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = MQData &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetADC_Average
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[12b]"></a>MQGetDevice</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dev_mq.o(.text.MQGetDevice))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[aa]"></a>Multiple_read_BH1750</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, dev_bh1750_1.o(.text.Multiple_read_BH1750))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = Multiple_read_BH1750 &rArr; BH1750_IIC_write_byte &rArr; BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_stop
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_ACK
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_NACK
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_write_byte
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_start
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, bsp_group_irq.o(.text.NMI_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = NMI_Handler &rArr; bsp_group_irq_call
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_group_irq_call
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[b0]"></a>PHData</STRONG> (Thumb, 240 bytes, Stack size 16 bytes, dev_ph.o(.text.PHData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = PHData &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetADC_Average
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[12c]"></a>PHGetDevice</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dev_ph.o(.text.PHGetDevice))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[b1]"></a>PWM_LED</STRONG> (Thumb, 140 bytes, Stack size 48 bytes, drv_gpt_pwm.o(.text.PWM_LED))
+<BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = PWM_LED &rArr; PWM_SetDuty &rArr; R_GPT_DutyCycleSet &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_SetDuty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[1f]"></a>R_ADC_Calibrate</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, r_adc.o(.text.R_ADC_Calibrate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_ADC_Calibrate
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[21]"></a>R_ADC_CallbackSet</STRONG> (Thumb, 38 bytes, Stack size 20 bytes, r_adc.o(.text.R_ADC_CallbackSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_ADC_CallbackSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[22]"></a>R_ADC_Close</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, r_adc.o(.text.R_ADC_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R_ADC_Close &rArr; r_adc_irq_disable &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[23]"></a>R_ADC_InfoGet</STRONG> (Thumb, 226 bytes, Stack size 56 bytes, r_adc.o(.text.R_ADC_InfoGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = R_ADC_InfoGet &rArr; r_adc_lowest_channel_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_lowest_channel_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[20]"></a>R_ADC_OffsetSet</STRONG> (Thumb, 14 bytes, Stack size 12 bytes, r_adc.o(.text.R_ADC_OffsetSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_ADC_OffsetSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[17]"></a>R_ADC_Open</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, r_adc.o(.text.R_ADC_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = R_ADC_Open &rArr; r_adc_irq_enable &rArr; R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_enable
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_open_sub
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[1d]"></a>R_ADC_Read</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, r_adc.o(.text.R_ADC_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_ADC_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Read32
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[1e]"></a>R_ADC_Read32</STRONG> (Thumb, 94 bytes, Stack size 40 bytes, r_adc.o(.text.R_ADC_Read32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = R_ADC_Read32 &rArr; R_ADC_Read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Read
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[18]"></a>R_ADC_ScanCfg</STRONG> (Thumb, 42 bytes, Stack size 32 bytes, r_adc.o(.text.R_ADC_ScanCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = R_ADC_ScanCfg &rArr; r_adc_scan_cfg &rArr; r_adc_sensor_cfg &rArr; r_adc_sensor_sample_state_calculation &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_scan_cfg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[1a]"></a>R_ADC_ScanGroupStart</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, r_adc.o(.text.R_ADC_ScanGroupStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_ADC_ScanGroupStart
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[19]"></a>R_ADC_ScanStart</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_adc.o(.text.R_ADC_ScanStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_ADC_ScanStart
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[1b]"></a>R_ADC_ScanStop</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, r_adc.o(.text.R_ADC_ScanStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_ADC_ScanStop
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[1c]"></a>R_ADC_StatusGet</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, r_adc.o(.text.R_ADC_StatusGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_ADC_StatusGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_adc.o(.rodata.g_adc_on_adc)
+</UL>
+<P><STRONG><a name="[b7]"></a>R_BSP_Init_RTC</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, bsp_clocks.o(.text.R_BSP_Init_RTC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = R_BSP_Init_RTC &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[b8]"></a>R_BSP_RegisterProtectDisable</STRONG> (Thumb, 114 bytes, Stack size 20 bytes, bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+
+<P><STRONG><a name="[b9]"></a>R_BSP_RegisterProtectEnable</STRONG> (Thumb, 134 bytes, Stack size 20 bytes, bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+
+<P><STRONG><a name="[a6]"></a>R_BSP_SoftwareDelay</STRONG> (Thumb, 154 bytes, Stack size 48 bytes, bsp_delay.o(.text.R_BSP_SoftwareDelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MH_PinRead
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udelay
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+</UL>
+
+<P><STRONG><a name="[102]"></a>R_BSP_SourceClockHzGet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, bsp_clocks.o(.text.R_BSP_SourceClockHzGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_SourceClockHzGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickInit
+</UL>
+
+<P><STRONG><a name="[d5]"></a>R_BSP_WarmStart</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, hal_entry.o(.text.R_BSP_WarmStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = R_BSP_WarmStart &rArr; R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[44]"></a>R_GPT_CallbackSet</STRONG> (Thumb, 38 bytes, Stack size 20 bytes, r_gpt.o(.text.R_GPT_CallbackSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_GPT_CallbackSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[45]"></a>R_GPT_Close</STRONG> (Thumb, 100 bytes, Stack size 32 bytes, r_gpt.o(.text.R_GPT_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = R_GPT_Close &rArr; r_gpt_disable_irq &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_disable_irq
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3f]"></a>R_GPT_Disable</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, r_gpt.o(.text.R_GPT_Disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_GPT_Disable &rArr; r_gpt_write_protect_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_events_disable
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[41]"></a>R_GPT_DutyCycleSet</STRONG> (Thumb, 286 bytes, Stack size 48 bytes, r_gpt.o(.text.R_GPT_DutyCycleSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = R_GPT_DutyCycleSet &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_calculate_duty_cycle
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_SetDuty
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3e]"></a>R_GPT_Enable</STRONG> (Thumb, 128 bytes, Stack size 40 bytes, r_gpt.o(.text.R_GPT_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = R_GPT_Enable &rArr; r_gpt_write_protect_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[42]"></a>R_GPT_InfoGet</STRONG> (Thumb, 54 bytes, Stack size 32 bytes, r_gpt.o(.text.R_GPT_InfoGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = R_GPT_InfoGet &rArr; gpt_clock_frequency_get &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_clock_frequency_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_SetDuty
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3a]"></a>R_GPT_Open</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, r_gpt.o(.text.R_GPT_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = R_GPT_Open &rArr; gpt_hardware_initialize &rArr; r_gpt_enable_irq &rArr; R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_common_open
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[40]"></a>R_GPT_PeriodSet</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, r_gpt.o(.text.R_GPT_PeriodSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = R_GPT_PeriodSet &rArr; r_gpt_write_protect_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3d]"></a>R_GPT_Reset</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_gpt.o(.text.R_GPT_Reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_GPT_Reset
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3b]"></a>R_GPT_Start</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_gpt.o(.text.R_GPT_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_GPT_Start
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[43]"></a>R_GPT_StatusGet</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, r_gpt.o(.text.R_GPT_StatusGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_GPT_StatusGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[3c]"></a>R_GPT_Stop</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_gpt.o(.text.R_GPT_Stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_GPT_Stop
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_gpt.o(.rodata.g_timer_on_gpt)
+</UL>
+<P><STRONG><a name="[28]"></a>R_ICU_ExternalIrqCallbackSet</STRONG> (Thumb, 32 bytes, Stack size 20 bytes, r_icu.o(.text.R_ICU_ExternalIrqCallbackSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_ICU_ExternalIrqCallbackSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_icu.o(.rodata.g_external_irq_on_icu)
+</UL>
+<P><STRONG><a name="[29]"></a>R_ICU_ExternalIrqClose</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_icu.o(.text.R_ICU_ExternalIrqClose))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = R_ICU_ExternalIrqClose &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_icu.o(.rodata.g_external_irq_on_icu)
+</UL>
+<P><STRONG><a name="[27]"></a>R_ICU_ExternalIrqDisable</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, r_icu.o(.text.R_ICU_ExternalIrqDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = R_ICU_ExternalIrqDisable &rArr; R_BSP_IrqDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_icu.o(.rodata.g_external_irq_on_icu)
+</UL>
+<P><STRONG><a name="[26]"></a>R_ICU_ExternalIrqEnable</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, r_icu.o(.text.R_ICU_ExternalIrqEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = R_ICU_ExternalIrqEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_icu.o(.rodata.g_external_irq_on_icu)
+</UL>
+<P><STRONG><a name="[25]"></a>R_ICU_ExternalIrqOpen</STRONG> (Thumb, 188 bytes, Stack size 32 bytes, r_icu.o(.text.R_ICU_ExternalIrqOpen))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R_ICU_ExternalIrqOpen &rArr; R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_icu.o(.rodata.g_external_irq_on_icu)
+</UL>
+<P><STRONG><a name="[2b]"></a>R_IOPORT_Close</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, r_ioport.o(.text.R_IOPORT_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_IOPORT_Close
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[2a]"></a>R_IOPORT_Open</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, r_ioport.o(.text.R_IOPORT_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_WarmStart
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[2d]"></a>R_IOPORT_PinCfg</STRONG> (Thumb, 56 bytes, Stack size 40 bytes, r_ioport.o(.text.R_IOPORT_PinCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = R_IOPORT_PinCfg &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_PinAccessDisable
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pfs_write
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_PinAccessEnable
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[2e]"></a>R_IOPORT_PinEventInputRead</STRONG> (Thumb, 88 bytes, Stack size 20 bytes, r_ioport.o(.text.R_IOPORT_PinEventInputRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_IOPORT_PinEventInputRead
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[2f]"></a>R_IOPORT_PinEventOutputWrite</STRONG> (Thumb, 100 bytes, Stack size 32 bytes, r_ioport.o(.text.R_IOPORT_PinEventOutputWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = R_IOPORT_PinEventOutputWrite &rArr; r_ioport_hw_pin_event_output_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_hw_pin_event_output_data_write
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[30]"></a>R_IOPORT_PinRead</STRONG> (Thumb, 26 bytes, Stack size 24 bytes, r_ioport.o(.text.R_IOPORT_PinRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = R_IOPORT_PinRead &rArr; R_BSP_PinRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_PinRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_SDA_Read
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[31]"></a>R_IOPORT_PinWrite</STRONG> (Thumb, 114 bytes, Stack size 28 bytes, r_ioport.o(.text.R_IOPORT_PinWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_stop
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_ACK
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_NACK
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_write_byte
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_start
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_data
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_cmd
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteComm
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataSPI
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XTFT_Init_GPIO
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[2c]"></a>R_IOPORT_PinsCfg</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, r_ioport.o(.text.R_IOPORT_PinsCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = R_IOPORT_PinsCfg &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[32]"></a>R_IOPORT_PortDirectionSet</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, r_ioport.o(.text.R_IOPORT_PortDirectionSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_IOPORT_PortDirectionSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[33]"></a>R_IOPORT_PortEventInputRead</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, r_ioport.o(.text.R_IOPORT_PortEventInputRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_IOPORT_PortEventInputRead
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[34]"></a>R_IOPORT_PortEventOutputWrite</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, r_ioport.o(.text.R_IOPORT_PortEventOutputWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_IOPORT_PortEventOutputWrite
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[35]"></a>R_IOPORT_PortRead</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, r_ioport.o(.text.R_IOPORT_PortRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_IOPORT_PortRead
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[36]"></a>R_IOPORT_PortWrite</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, r_ioport.o(.text.R_IOPORT_PortWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_IOPORT_PortWrite
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[4d]"></a>R_SCI_UART_Abort</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, r_sci_uart.o(.text.R_SCI_UART_Abort))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_SCI_UART_Abort &rArr; r_sci_negate_de_pin
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_negate_de_pin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[4b]"></a>R_SCI_UART_BaudSet</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, r_sci_uart.o(.text.R_SCI_UART_BaudSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = R_SCI_UART_BaudSet &rArr; r_sci_uart_baud_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_baud_set
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[4e]"></a>R_SCI_UART_CallbackSet</STRONG> (Thumb, 38 bytes, Stack size 20 bytes, r_sci_uart.o(.text.R_SCI_UART_CallbackSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_SCI_UART_CallbackSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[4f]"></a>R_SCI_UART_Close</STRONG> (Thumb, 140 bytes, Stack size 40 bytes, r_sci_uart.o(.text.R_SCI_UART_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = R_SCI_UART_Close &rArr; R_BSP_IrqDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_negate_de_pin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[4c]"></a>R_SCI_UART_InfoGet</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_SCI_UART_InfoGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_SCI_UART_InfoGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[48]"></a>R_SCI_UART_Open</STRONG> (Thumb, 388 bytes, Stack size 48 bytes, r_sci_uart.o(.text.R_SCI_UART_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = R_SCI_UART_Open &rArr; r_sci_irqs_cfg &rArr; r_sci_irq_cfg &rArr; R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_config_set
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_negate_de_pin
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irqs_cfg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[49]"></a>R_SCI_UART_Read</STRONG> (Thumb, 34 bytes, Stack size 20 bytes, r_sci_uart.o(.text.R_SCI_UART_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_SCI_UART_Read
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[50]"></a>R_SCI_UART_ReadStop</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, r_sci_uart.o(.text.R_SCI_UART_ReadStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_SCI_UART_ReadStop
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[4a]"></a>R_SCI_UART_Write</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, r_sci_uart.o(.text.R_SCI_UART_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_SCI_UART_Write
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_sci_uart.o(.rodata.g_uart_on_sci)
+</UL>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, startup.o(.text.Reset_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 960<LI>Call Chain = Reset_Handler &rArr; main &rArr; hal_entry &rArr; WiFiTCP_Init &rArr; WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[ee]"></a>RingBufferNew</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, ring_buffer.o(.text.RingBufferNew))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = RingBufferNew &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvInit
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[81]"></a>SDA_Pin_IN</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv_bh1750_iic.o(.text.SDA_Pin_IN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SDA_Pin_IN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+</UL>
+
+<P><STRONG><a name="[83]"></a>SDA_Pin_Output</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv_bh1750_iic.o(.text.SDA_Pin_Output))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SDA_Pin_Output
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+</UL>
+
+<P><STRONG><a name="[a3]"></a>ST7735_DrawString</STRONG> (Thumb, 256 bytes, Stack size 48 bytes, dev_lcd.o(.text.ST7735_DrawString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = ST7735_DrawString &rArr; ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWind
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWater
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessMotor
+</UL>
+
+<P><STRONG><a name="[f2]"></a>ST7735_FillRectangle</STRONG> (Thumb, 368 bytes, Stack size 24 bytes, dev_lcd.o(.text.ST7735_FillRectangle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = ST7735_FillRectangle &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_data
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetAddressWindow
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillScreen
+</UL>
+
+<P><STRONG><a name="[92]"></a>ST7735_FillScreen</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, dev_lcd.o(.text.ST7735_FillScreen))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = ST7735_FillScreen &rArr; ST7735_FillRectangle &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DispApp_Init
+</UL>
+
+<P><STRONG><a name="[f7]"></a>ST7735_cmd</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dev_lcd.o(.text.ST7735_cmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = ST7735_cmd &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_write
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteCommand
+</UL>
+
+<P><STRONG><a name="[f4]"></a>ST7735_data</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dev_lcd.o(.text.ST7735_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_write
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteData
+</UL>
+
+<P><STRONG><a name="[f8]"></a>ST7735_write</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, dev_lcd.o(.text.ST7735_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataSPI
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_data
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_cmd
+</UL>
+
+<P><STRONG><a name="[f9]"></a>SendDataSPI</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, dev_lcd.o(.text.SendDataSPI))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_write
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteComm
+</UL>
+
+<P><STRONG><a name="[a9]"></a>Single_Write_BH1750</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dev_bh1750_1.o(.text.Single_Write_BH1750))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = Single_Write_BH1750 &rArr; BH1750_IIC_write_byte &rArr; BH1750_IIC_Get_ack &rArr; BH1750_IIC_Delay &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_stop
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_write_byte
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+</UL>
+
+<P><STRONG><a name="[a]"></a>SysTick_Handler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, drv_systick.o(.text.SysTick_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[ff]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 58 bytes, Stack size 4 bytes, bsp_clocks.o(.text.SystemCoreClockUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_clock_set_hard_reset
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_freq_var_init
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[eb]"></a>SystemInit</STRONG> (Thumb, 272 bytes, Stack size 40 bytes, system.o(.text.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = SystemInit &rArr; R_BSP_WarmStart &rArr; R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_init
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_WarmStart
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[103]"></a>SystickTimerDevicesCreate</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, drv_systick.o(.text.SystickTimerDevicesCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SystickTimerDevicesCreate &rArr; TimerDeviceInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDevicesRegister
+</UL>
+
+<P><STRONG><a name="[104]"></a>TCP_Connect</STRONG> (Thumb, 430 bytes, Stack size 184 bytes, dev_wifi_bt.o(.text.TCP_Connect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 512<LI>Call Chain = TCP_Connect &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+</UL>
+
+<P><STRONG><a name="[108]"></a>TCP_Data</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, dev_wifi_bt.o(.text.TCP_Data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = TCP_Data &rArr; mdelay &rArr; TimerDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[109]"></a>TimerDeviceFind</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, dev_timer.o(.text.TimerDeviceFind))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = TimerDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+</UL>
+
+<P><STRONG><a name="[97]"></a>TimerDeviceInsert</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, dev_timer.o(.text.TimerDeviceInsert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = TimerDeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTTimerDevicesCreate
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickTimerDevicesCreate
+</UL>
+
+<P><STRONG><a name="[10a]"></a>TimerDeviceList</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, dev_timer.o(.text.TimerDeviceList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TimerDeviceList &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDevicesRegister
+</UL>
+
+<P><STRONG><a name="[10b]"></a>TimerDevicesRegister</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, dev_timer.o(.text.TimerDevicesRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = TimerDevicesRegister &rArr; GPTTimerDevicesCreate &rArr; GPTDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceList
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTTimerDevicesCreate
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickTimerDevicesCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[10f]"></a>UartDeviceFind</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, dev_uart.o(.text.UartDeviceFind))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = UartDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[112]"></a>UartDeviceInsert</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, dev_uart.o(.text.UartDeviceInsert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = UartDeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDevicesCreate
+</UL>
+
+<P><STRONG><a name="[110]"></a>UartDeviceList</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, dev_uart.o(.text.UartDeviceList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = UartDeviceList &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDevicesRegister
+</UL>
+
+<P><STRONG><a name="[111]"></a>UartDevicesCreate</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, drv_uart.o(.text.UartDevicesCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = UartDevicesCreate &rArr; UartDeviceInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDevicesRegister
+</UL>
+
+<P><STRONG><a name="[113]"></a>UartDevicesRegister</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dev_uart.o(.text.UartDevicesRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = UartDevicesRegister &rArr; UartDeviceList &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceList
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDevicesCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[114]"></a>WiFiBtDevConnect</STRONG> (Thumb, 476 bytes, Stack size 248 bytes, dev_wifi_bt.o(.text.WiFiBtDevConnect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 664<LI>Call Chain = WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetRPTM
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+</UL>
+
+<P><STRONG><a name="[116]"></a>WiFiBtDevConnectWiFi</STRONG> (Thumb, 390 bytes, Stack size 160 bytes, dev_wifi_bt.o(.text.WiFiBtDevConnectWiFi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 488<LI>Call Chain = WiFiBtDevConnectWiFi &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+</UL>
+
+<P><STRONG><a name="[117]"></a>WiFiBtDevEnableDHCP</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, dev_wifi_bt.o(.text.WiFiBtDevEnableDHCP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = WiFiBtDevEnableDHCP &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[118]"></a>WiFiBtDevGetLocalIP</STRONG> (Thumb, 172 bytes, Stack size 64 bytes, dev_wifi_bt.o(.text.WiFiBtDevGetLocalIP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = WiFiBtDevGetLocalIP &rArr; mdelay &rArr; TimerDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+</UL>
+
+<P><STRONG><a name="[119]"></a>WiFiBtDevInit</STRONG> (Thumb, 200 bytes, Stack size 16 bytes, dev_wifi_bt.o(.text.WiFiBtDevInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = WiFiBtDevInit &rArr; WiFiBtDevSetWorkType &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferNew
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevReset
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceFind
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevEnableDHCP
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetWorkType
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+</UL>
+
+<P><STRONG><a name="[11a]"></a>WiFiBtDevReset</STRONG> (Thumb, 90 bytes, Stack size 88 bytes, dev_wifi_bt.o(.text.WiFiBtDevReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = WiFiBtDevReset &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[115]"></a>WiFiBtDevSetRPTM</STRONG> (Thumb, 88 bytes, Stack size 88 bytes, dev_wifi_bt.o(.text.WiFiBtDevSetRPTM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+</UL>
+
+<P><STRONG><a name="[11b]"></a>WiFiBtDevSetWorkType</STRONG> (Thumb, 92 bytes, Stack size 96 bytes, dev_wifi_bt.o(.text.WiFiBtDevSetWorkType))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = WiFiBtDevSetWorkType &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[11c]"></a>WiFiNetDataPreDeal</STRONG> (Thumb, 594 bytes, Stack size 40 bytes, dev_wifi_bt.o(.text.WiFiNetDataPreDeal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = WiFiNetDataPreDeal &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart6_callback
+</UL>
+
+<P><STRONG><a name="[11d]"></a>WiFiTCP_Init</STRONG> (Thumb, 198 bytes, Stack size 64 bytes, app_wifi_bt.o(.text.WiFiTCP_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 728<LI>Call Chain = WiFiTCP_Init &rArr; WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevGetLocalIP
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevEnableDHCP
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetWorkType
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[a7]"></a>WriteComm</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dev_lcd.o(.text.WriteComm))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = WriteComm &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataSPI
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+</UL>
+
+<P><STRONG><a name="[a8]"></a>WriteData</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dev_lcd.o(.text.WriteData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = WriteData &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataSPI
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+</UL>
+
+<P><STRONG><a name="[90]"></a>XTFT_Init_GPIO</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, dev_lcd.o(.text.XTFT_Init_GPIO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = XTFT_Init_GPIO &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DispApp_Init
+</UL>
+
+<P><STRONG><a name="[93]"></a>__aeabi_assert</STRONG> (Thumb, 14 bytes, Stack size 12 bytes, bsp_common.o(.text.__aeabi_assert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODrvRead
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODrvWrite
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODrvInit
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvTimeout
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvStop
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvStart
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvInit
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvRead
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvWrite
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvInit
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQDrvRead
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQDrvInit
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHDrvRead
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHDrvInit
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHDrvRead
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHDrvInit
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[fc]"></a>bsp_clock_init</STRONG> (Thumb, 228 bytes, Stack size 8 bytes, bsp_clocks.o(.text.bsp_clock_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = bsp_clock_init &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_clock_set_hard_reset
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_freq_var_init
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_FlashCacheEnable
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[101]"></a>bsp_init</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, bsp_common.o(.text.bsp_init_internal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = bsp_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[14d]"></a>bsp_init_internal</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, bsp_common.o(.text.bsp_init_internal), UNUSED)
+
+<P><STRONG><a name="[100]"></a>bsp_irq_cfg</STRONG> (Thumb, 240 bytes, Stack size 48 bytes, bsp_irq.o(.text.bsp_irq_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = bsp_irq_cfg &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[d4]"></a>bsp_prv_software_delay_loop</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, bsp_delay.o(.text.bsp_prv_software_delay_loop))
+<BR><BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+
+<P><STRONG><a name="[15]"></a>fputc</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, printf.o(.text.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = fputc &rArr; UartDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceFind
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
+</UL>
+<P><STRONG><a name="[121]"></a>fuseSensorData</STRONG> (Thumb, 170 bytes, Stack size 56 bytes, kalman.o(.text.fuseSensorData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = fuseSensorData &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_timer2_callback
+</UL>
+
+<P><STRONG><a name="[f]"></a>gpt_counter_overflow_isr</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, r_gpt.o(.text.gpt_counter_overflow_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = gpt_counter_overflow_isr &rArr; r_gpt_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_call_callback
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[39]"></a>gpt_timer2_callback</STRONG> (Thumb, 276 bytes, Stack size 104 bytes, kalman.o(.text.gpt_timer2_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = gpt_timer2_callback &rArr; kalmanFilter &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_WaterPump
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kalmanFilter
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fuseSensorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_timer2_cfg)
+</UL>
+<P><STRONG><a name="[129]"></a>hal_entry</STRONG> (Thumb, 1404 bytes, Stack size 208 bytes, hal_entry.o(.text.hal_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 936<LI>Call Chain = hal_entry &rArr; WiFiTCP_Init &rArr; WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_LED
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWind
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWater
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessMotor
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IOGetDecvice
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessJitter
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GptPWMDrvInit
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DispApp_Init
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750Data
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceData
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT11GetDevice
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHGetDevice
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQGetDevice
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHGetDevice
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODevicesRegister
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Data
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDevicesRegister
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDevicesRegister
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sprintf
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[128]"></a>kalmanFilter</STRONG> (Thumb, 312 bytes, Stack size 120 bytes, kalman.o(.text.kalmanFilter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = kalmanFilter &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_timer2_callback
+</UL>
+
+<P><STRONG><a name="[24]"></a>key_external_irq_callback</STRONG> (Thumb, 254 bytes, Stack size 16 bytes, drv_gpio.o(.text.key_external_irq_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = key_external_irq_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Address Reference Count : 3]<UL><LI> common_data.o(.rodata.g_external_irq9_cfg)
+<LI> common_data.o(.rodata.g_external_irq8_cfg)
+<LI> common_data.o(.rodata.g_external_irq6_cfg)
+</UL>
+<P><STRONG><a name="[ec]"></a>main</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 952<LI>Call Chain = main &rArr; hal_entry &rArr; WiFiTCP_Init &rArr; WiFiBtDevConnect &rArr; WiFiBtDevSetRPTM &rArr; WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[7c]"></a>mdelay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, delay.o(.text.mdelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = mdelay &rArr; TimerDeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceFind
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Multiple_read_BH1750
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT11DevRead
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750Data
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIght_Intensity
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceData
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Data
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevGetLocalIP
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevInit
+</UL>
+
+<P><STRONG><a name="[10]"></a>r_icu_isr</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, r_icu.o(.text.r_icu_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = r_icu_isr &rArr; R_FSP_CurrentIrqGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[e]"></a>sci_uart_eri_isr</STRONG> (Thumb, 154 bytes, Stack size 24 bytes, r_sci_uart.o(.text.sci_uart_eri_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sci_uart_eri_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_negate_de_pin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[b]"></a>sci_uart_rxi_isr</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, r_sci_uart.o(.text.sci_uart_rxi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sci_uart_rxi_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[d]"></a>sci_uart_tei_isr</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, r_sci_uart.o(.text.sci_uart_tei_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = sci_uart_tei_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_negate_de_pin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[c]"></a>sci_uart_txi_isr</STRONG> (Thumb, 198 bytes, Stack size 24 bytes, r_sci_uart.o(.text.sci_uart_txi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sci_uart_txi_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextGet
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_CurrentIrqGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[37]"></a>timer0_callback</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, drv_gpt.o(.text.timer0_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer0_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_timer0_cfg)
+</UL>
+<P><STRONG><a name="[38]"></a>timer1_callback</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, drv_gpt.o(.text.timer1_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer1_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_timer1_cfg)
+</UL>
+<P><STRONG><a name="[46]"></a>uart6_callback</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, drv_uart.o(.text.uart6_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = uart6_callback &rArr; WiFiNetDataPreDeal &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiNetDataPreDeal
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_uart6_cfg)
+</UL>
+<P><STRONG><a name="[47]"></a>uart7_callback</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, drv_uart.o(.text.uart7_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uart7_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_uart7_cfg)
+</UL>
+<P><STRONG><a name="[7f]"></a>udelay</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, delay.o(.text.udelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Delay
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT11DevRead
+</UL>
+
+<P><STRONG><a name="[13a]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[14e]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[14f]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[150]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[7b]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWind
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessWater
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessMotor
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODrvInit
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODeviceList
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDeviceList
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartDeviceList
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT11DevInit
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferNew
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevCmdRet
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyProcessJitter
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GptPWMDrvInit
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DispApp_Init
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750Data
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceData
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHData
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQData
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiTCP_Init
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Data
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevGetLocalIP
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+</UL>
+
+<P><STRONG><a name="[13c]"></a>__0sprintf</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[151]"></a>__1sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+
+<P><STRONG><a name="[152]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+
+<P><STRONG><a name="[153]"></a>__c89sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+
+<P><STRONG><a name="[105]"></a>sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = sprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetRPTM
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevReset
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnect
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetWorkType
+</UL>
+
+<P><STRONG><a name="[ed]"></a>free</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, malloc2.o(i.__free$2region))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferFree
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferNew
+</UL>
+
+<P><STRONG><a name="[ef]"></a>malloc</STRONG> (Thumb, 92 bytes, Stack size 20 bytes, malloc2.o(i.__malloc$2region))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferNew
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[107]"></a>WiFiBtDevCmdRet</STRONG> (Thumb, 212 bytes, Stack size 280 bytes, dev_wifi_bt.o(.text.WiFiBtDevCmdRet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = WiFiBtDevCmdRet &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetRPTM
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevReset
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TCP_Connect
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevConnectWiFi
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevEnableDHCP
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WiFiBtDevSetWorkType
+</UL>
+
+<P><STRONG><a name="[54]"></a>DHT11DevInit</STRONG> (Thumb, 120 bytes, Stack size 16 bytes, dev_dht11.o(.text.DHT11DevInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = DHT11DevInit &rArr; IODeviceFind &rArr; strstr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IODeviceFind
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_dht11.o(.data.gDevice)
+</UL>
+<P><STRONG><a name="[55]"></a>DHT11DevRead</STRONG> (Thumb, 830 bytes, Stack size 72 bytes, dev_dht11.o(.text.DHT11DevRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = DHT11DevRead &rArr; udelay &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udelay
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_dht11.o(.data.gDevice)
+</UL>
+<P><STRONG><a name="[62]"></a>PHDrvInit</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, dev_ph.o(.text.PHDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = PHDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_ph.o(.data.gPHDev)
+</UL>
+<P><STRONG><a name="[63]"></a>PHDrvRead</STRONG> (Thumb, 210 bytes, Stack size 32 bytes, dev_ph.o(.text.PHDrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = PHDrvRead &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_ph.o(.data.gPHDev)
+</UL>
+<P><STRONG><a name="[ac]"></a>MH_PinRead</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, dev_mh.o(.text.MH_PinRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MH_PinRead &rArr; R_BSP_SoftwareDelay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MHData
+</UL>
+
+<P><STRONG><a name="[5e]"></a>MHDrvInit</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, dev_mh.o(.text.MHDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = MHDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_mh.o(.data.gMHDev)
+</UL>
+<P><STRONG><a name="[5f]"></a>MHDrvRead</STRONG> (Thumb, 210 bytes, Stack size 32 bytes, dev_mh.o(.text.MHDrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = MHDrvRead &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_mh.o(.data.gMHDev)
+</UL>
+<P><STRONG><a name="[60]"></a>MQDrvInit</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, dev_mq.o(.text.MQDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = MQDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_mq.o(.data.gMQDev)
+</UL>
+<P><STRONG><a name="[61]"></a>MQDrvRead</STRONG> (Thumb, 210 bytes, Stack size 32 bytes, dev_mq.o(.text.MQDrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = MQDrvRead &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dev_mq.o(.data.gMQDev)
+</UL>
+<P><STRONG><a name="[f5]"></a>ST7735_WriteCommand</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, dev_lcd.o(.text.ST7735_WriteCommand))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = ST7735_WriteCommand &rArr; ST7735_cmd &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetAddressWindow
+</UL>
+
+<P><STRONG><a name="[f6]"></a>ST7735_WriteData</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, dev_lcd.o(.text.ST7735_WriteData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_data
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteChar
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetAddressWindow
+</UL>
+
+<P><STRONG><a name="[f3]"></a>ST7735_SetAddressWindow</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, dev_lcd.o(.text.ST7735_SetAddressWindow))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteData
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteCommand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRectangle
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteChar
+</UL>
+
+<P><STRONG><a name="[f1]"></a>ST7735_WriteChar</STRONG> (Thumb, 230 bytes, Stack size 56 bytes, dev_lcd.o(.text.ST7735_WriteChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = ST7735_WriteChar &rArr; ST7735_SetAddressWindow &rArr; ST7735_WriteData &rArr; ST7735_data &rArr; ST7735_write &rArr; SendDataSPI &rArr; R_IOPORT_PinWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetAddressWindow
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_WriteData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+</UL>
+
+<P><STRONG><a name="[5b]"></a>UARTDrvInit</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, drv_uart.o(.text.UARTDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = UARTDrvInit &rArr; RingBufferNew &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBufferNew
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_uart.o(.data.gLogDevice)
+<LI> drv_uart.o(.data.gWiFiDevice)
+</UL>
+<P><STRONG><a name="[5c]"></a>UARTDrvWrite</STRONG> (Thumb, 230 bytes, Stack size 40 bytes, drv_uart.o(.text.UARTDrvWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = UARTDrvWrite &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7WaitTxCplt
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART6WaitTxCplt
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_uart.o(.data.gLogDevice)
+<LI> drv_uart.o(.data.gWiFiDevice)
+</UL>
+<P><STRONG><a name="[10d]"></a>UART6WaitTxCplt</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drv_uart.o(.text.UART6WaitTxCplt))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvWrite
+</UL>
+
+<P><STRONG><a name="[10e]"></a>UART7WaitTxCplt</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drv_uart.o(.text.UART7WaitTxCplt))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvWrite
+</UL>
+
+<P><STRONG><a name="[5d]"></a>UARTDrvRead</STRONG> (Thumb, 194 bytes, Stack size 32 bytes, drv_uart.o(.text.UARTDrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = UARTDrvRead &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7WaitRxCplt
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_uart.o(.data.gLogDevice)
+<LI> drv_uart.o(.data.gWiFiDevice)
+</UL>
+<P><STRONG><a name="[10c]"></a>UART7WaitRxCplt</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drv_uart.o(.text.UART7WaitRxCplt))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDrvRead
+</UL>
+
+<P><STRONG><a name="[64]"></a>SystickInit</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, drv_systick.o(.text.SystickInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SystickInit &rArr; SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SourceClockHzGet
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_systick.o(.data.gSystickDevice)
+</UL>
+<P><STRONG><a name="[fa]"></a>SysTick_Config</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, drv_systick.o(.text.SysTick_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickInit
+</UL>
+
+<P><STRONG><a name="[65]"></a>HAL_Delay</STRONG> (Thumb, 114 bytes, Stack size 20 bytes, drv_systick.o(.text.HAL_Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_Delay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_systick.o(.data.gSystickDevice)
+</UL>
+<P><STRONG><a name="[fb]"></a>__NVIC_SetPriority</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, drv_systick.o(.text.__NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+</UL>
+
+<P><STRONG><a name="[56]"></a>GPTDrvInit</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, drv_gpt.o(.text.GPTDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = GPTDrvInit &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTTimerDevicesCreate
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpt.o(.data.gGPTDevice)
+<LI> drv_gpt.o(.data.gGPT1Device)
+</UL>
+<P><STRONG><a name="[57]"></a>GPTDrvStart</STRONG> (Thumb, 166 bytes, Stack size 32 bytes, drv_gpt.o(.text.GPTDrvStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = GPTDrvStart &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpt.o(.data.gGPTDevice)
+<LI> drv_gpt.o(.data.gGPT1Device)
+</UL>
+<P><STRONG><a name="[58]"></a>GPTDrvStop</STRONG> (Thumb, 278 bytes, Stack size 32 bytes, drv_gpt.o(.text.GPTDrvStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = GPTDrvStop &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpt.o(.data.gGPTDevice)
+<LI> drv_gpt.o(.data.gGPT1Device)
+</UL>
+<P><STRONG><a name="[59]"></a>GPTDrvRead</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, drv_gpt.o(.text.GPTDrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPTDrvRead
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpt.o(.data.gGPTDevice)
+<LI> drv_gpt.o(.data.gGPT1Device)
+</UL>
+<P><STRONG><a name="[5a]"></a>GPTDrvTimeout</STRONG> (Thumb, 400 bytes, Stack size 32 bytes, drv_gpt.o(.text.GPTDrvTimeout))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = GPTDrvTimeout &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvWaitTimer1Overflow
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvWaitTimer0Overflow
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpt.o(.data.gGPTDevice)
+<LI> drv_gpt.o(.data.gGPT1Device)
+</UL>
+<P><STRONG><a name="[94]"></a>GPTDrvWaitTimer0Overflow</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drv_gpt.o(.text.GPTDrvWaitTimer0Overflow))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvTimeout
+</UL>
+
+<P><STRONG><a name="[95]"></a>GPTDrvWaitTimer1Overflow</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drv_gpt.o(.text.GPTDrvWaitTimer1Overflow))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPTDrvTimeout
+</UL>
+
+<P><STRONG><a name="[51]"></a>IODrvInit</STRONG> (Thumb, 460 bytes, Stack size 24 bytes, drv_gpio.o(.text.IODrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = IODrvInit &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> drv_gpio.o(.data.gDHTIODev)
+<LI> drv_gpio.o(.data.gKeyDev)
+</UL>
+<P><STRONG><a name="[52]"></a>IODrvWrite</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, drv_gpio.o(.text.IODrvWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = IODrvWrite &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.data.gDHTIODev)
+</UL>
+<P><STRONG><a name="[53]"></a>IODrvRead</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, drv_gpio.o(.text.IODrvRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = IODrvRead &rArr; __aeabi_assert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.data.gDHTIODev)
+</UL>
+<P><STRONG><a name="[99]"></a>PWM_SetDuty</STRONG> (Thumb, 94 bytes, Stack size 40 bytes, drv_gpt_pwm.o(.text.PWM_SetDuty))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = PWM_SetDuty &rArr; R_GPT_DutyCycleSet &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_InfoGet
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_LED
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GptPWMDrvInit
+</UL>
+
+<P><STRONG><a name="[82]"></a>IIC_SDA_Read</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, drv_bh1750_iic.o(.text.IIC_SDA_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = IIC_SDA_Read &rArr; R_IOPORT_PinRead &rArr; R_BSP_PinRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_Get_ack
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BH1750_IIC_read_byte
+</UL>
+
+<P><STRONG><a name="[11]"></a>RingBufferWrite</STRONG> (Thumb, 272 bytes, Stack size 40 bytes, ring_buffer.o(.text.RingBufferWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = RingBufferWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ring_buffer.o(.text.RingBufferNew)
+</UL>
+<P><STRONG><a name="[12]"></a>RingBufferRead</STRONG> (Thumb, 188 bytes, Stack size 32 bytes, ring_buffer.o(.text.RingBufferRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RingBufferRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ring_buffer.o(.text.RingBufferNew)
+</UL>
+<P><STRONG><a name="[13]"></a>RingBufferClear</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, ring_buffer.o(.text.RingBufferClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RingBufferClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ring_buffer.o(.text.RingBufferNew)
+</UL>
+<P><STRONG><a name="[14]"></a>RingBufferFree</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, ring_buffer.o(.text.RingBufferFree))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RingBufferFree &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ring_buffer.o(.text.RingBufferNew)
+</UL>
+<P><STRONG><a name="[11f]"></a>R_BSP_FlashCacheEnable</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, bsp_clocks.o(.text.R_BSP_FlashCacheEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+</UL>
+
+<P><STRONG><a name="[11e]"></a>bsp_clock_freq_var_init</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, bsp_clocks.o(.text.bsp_clock_freq_var_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = bsp_clock_freq_var_init &rArr; SystemCoreClockUpdate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+</UL>
+
+<P><STRONG><a name="[120]"></a>bsp_prv_clock_set_hard_reset</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, bsp_clocks.o(.text.bsp_prv_clock_set_hard_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = bsp_prv_clock_set_hard_reset &rArr; SystemCoreClockUpdate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+</UL>
+
+<P><STRONG><a name="[af]"></a>bsp_group_irq_call</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, bsp_group_irq.o(.text.bsp_group_irq_call))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = bsp_group_irq_call
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+
+<P><STRONG><a name="[b4]"></a>r_adc_open_sub</STRONG> (Thumb, 302 bytes, Stack size 48 bytes, r_adc.o(.text.r_adc_open_sub))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = r_adc_open_sub
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Open
+</UL>
+
+<P><STRONG><a name="[b5]"></a>r_adc_irq_enable</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, r_adc.o(.text.r_adc_irq_enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = r_adc_irq_enable &rArr; R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Open
+</UL>
+
+<P><STRONG><a name="[b6]"></a>r_adc_scan_cfg</STRONG> (Thumb, 476 bytes, Stack size 64 bytes, r_adc.o(.text.r_adc_scan_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = r_adc_scan_cfg &rArr; r_adc_sensor_cfg &rArr; r_adc_sensor_sample_state_calculation &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_sensor_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_ScanCfg
+</UL>
+
+<P><STRONG><a name="[b2]"></a>r_adc_irq_disable</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, r_adc.o(.text.r_adc_irq_disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = r_adc_irq_disable &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Close
+</UL>
+
+<P><STRONG><a name="[b3]"></a>r_adc_lowest_channel_get</STRONG> (Thumb, 48 bytes, Stack size 12 bytes, r_adc.o(.text.r_adc_lowest_channel_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = r_adc_lowest_channel_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_InfoGet
+</UL>
+
+<P><STRONG><a name="[c2]"></a>R_BSP_IrqCfgEnable</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, r_adc.o(.text.R_BSP_IrqCfgEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_enable
+</UL>
+
+<P><STRONG><a name="[130]"></a>r_adc_sensor_cfg</STRONG> (Thumb, 266 bytes, Stack size 48 bytes, r_adc.o(.text.r_adc_sensor_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = r_adc_sensor_cfg &rArr; r_adc_sensor_sample_state_calculation &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_sensor_sample_state_calculation
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_scan_cfg
+</UL>
+
+<P><STRONG><a name="[12f]"></a>R_BSP_IrqDisable</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, r_adc.o(.text.R_BSP_IrqDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_disable
+</UL>
+
+<P><STRONG><a name="[bb]"></a>R_FSP_IsrContextSet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_adc.o(.text.R_FSP_IsrContextSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_disable
+</UL>
+
+<P><STRONG><a name="[c7]"></a>R_BSP_IrqStatusClear</STRONG> (Thumb, 36 bytes, Stack size 4 bytes, r_adc.o(.text.R_BSP_IrqStatusClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+
+<P><STRONG><a name="[131]"></a>r_adc_sensor_sample_state_calculation</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, r_adc.o(.text.r_adc_sensor_sample_state_calculation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = r_adc_sensor_sample_state_calculation &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_SystemClockHzGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_sensor_cfg
+</UL>
+
+<P><STRONG><a name="[132]"></a>R_FSP_SystemClockHzGet</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, r_adc.o(.text.R_FSP_SystemClockHzGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_FSP_SystemClockHzGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_sensor_sample_state_calculation
+</UL>
+
+<P><STRONG><a name="[ba]"></a>R_BSP_IrqCfg</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, r_adc.o(.text.R_BSP_IrqCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+
+<P><STRONG><a name="[c3]"></a>R_BSP_IrqEnable</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, r_adc.o(.text.R_BSP_IrqEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnableNoClear
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+
+<P><STRONG><a name="[c6]"></a>R_BSP_IrqClearPending</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_adc.o(.text.R_BSP_IrqClearPending))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[ce]"></a>R_BSP_IrqEnableNoClear</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, r_adc.o(.text.R_BSP_IrqEnableNoClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqEnableNoClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[dc]"></a>gpt_common_open</STRONG> (Thumb, 86 bytes, Stack size 12 bytes, r_gpt.o(.text.gpt_common_open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = gpt_common_open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+
+<P><STRONG><a name="[dd]"></a>gpt_hardware_initialize</STRONG> (Thumb, 558 bytes, Stack size 80 bytes, r_gpt.o(.text.gpt_hardware_initialize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = gpt_hardware_initialize &rArr; r_gpt_enable_irq &rArr; R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_enable_irq
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_gtior_calculate
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_calculate_duty_cycle
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_events_disable
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_write_protect_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+
+<P><STRONG><a name="[d7]"></a>r_gpt_write_protect_disable</STRONG> (Thumb, 10 bytes, Stack size 4 bytes, r_gpt.o(.text.r_gpt_write_protect_disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = r_gpt_write_protect_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Close
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_PeriodSet
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Disable
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Enable
+</UL>
+
+<P><STRONG><a name="[d8]"></a>r_gpt_write_protect_enable</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, r_gpt.o(.text.r_gpt_write_protect_enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = r_gpt_write_protect_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Close
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_PeriodSet
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Disable
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Enable
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+</UL>
+
+<P><STRONG><a name="[d9]"></a>gpt_hardware_events_disable</STRONG> (Thumb, 44 bytes, Stack size 4 bytes, r_gpt.o(.text.gpt_hardware_events_disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = gpt_hardware_events_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Disable
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+</UL>
+
+<P><STRONG><a name="[da]"></a>gpt_calculate_duty_cycle</STRONG> (Thumb, 242 bytes, Stack size 36 bytes, r_gpt.o(.text.gpt_calculate_duty_cycle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = gpt_calculate_duty_cycle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+</UL>
+
+<P><STRONG><a name="[db]"></a>gpt_clock_frequency_get</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, r_gpt.o(.text.gpt_clock_frequency_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = gpt_clock_frequency_get &rArr; R_FSP_SystemClockHzGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_SystemClockHzGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_InfoGet
+</UL>
+
+<P><STRONG><a name="[d6]"></a>r_gpt_disable_irq</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, r_gpt.o(.text.r_gpt_disable_irq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = r_gpt_disable_irq &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Close
+</UL>
+
+<P><STRONG><a name="[126]"></a>gpt_gtior_calculate</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, r_gpt.o(.text.gpt_gtior_calculate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = gpt_gtior_calculate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+</UL>
+
+<P><STRONG><a name="[127]"></a>r_gpt_enable_irq</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, r_gpt.o(.text.r_gpt_enable_irq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = r_gpt_enable_irq &rArr; R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_hardware_initialize
+</UL>
+
+<P><STRONG><a name="[122]"></a>R_FSP_SystemClockHzGet</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, r_gpt.o(.text.R_FSP_SystemClockHzGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_FSP_SystemClockHzGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_clock_frequency_get
+</UL>
+
+<P><STRONG><a name="[133]"></a>R_BSP_IrqDisable</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, r_gpt.o(.text.R_BSP_IrqDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_disable_irq
+</UL>
+
+<P><STRONG><a name="[bd]"></a>R_FSP_IsrContextSet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_gpt.o(.text.R_FSP_IsrContextSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_disable_irq
+</UL>
+
+<P><STRONG><a name="[123]"></a>R_FSP_CurrentIrqGet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_gpt.o(.text.R_FSP_CurrentIrqGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_CurrentIrqGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+</UL>
+
+<P><STRONG><a name="[c9]"></a>R_BSP_IrqStatusClear</STRONG> (Thumb, 36 bytes, Stack size 4 bytes, r_gpt.o(.text.R_BSP_IrqStatusClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+
+<P><STRONG><a name="[124]"></a>R_FSP_IsrContextGet</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, r_gpt.o(.text.R_FSP_IsrContextGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_FSP_IsrContextGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+</UL>
+
+<P><STRONG><a name="[c8]"></a>R_BSP_IrqClearPending</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_gpt.o(.text.R_BSP_IrqClearPending))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[125]"></a>r_gpt_call_callback</STRONG> (Thumb, 102 bytes, Stack size 40 bytes, r_gpt.o(.text.r_gpt_call_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = r_gpt_call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_counter_overflow_isr
+</UL>
+
+<P><STRONG><a name="[c4]"></a>R_BSP_IrqCfgEnable</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, r_gpt.o(.text.R_BSP_IrqCfgEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = R_BSP_IrqCfgEnable &rArr; R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_enable_irq
+</UL>
+
+<P><STRONG><a name="[bc]"></a>R_BSP_IrqCfg</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, r_gpt.o(.text.R_BSP_IrqCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+
+<P><STRONG><a name="[c5]"></a>R_BSP_IrqEnable</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, r_gpt.o(.text.R_BSP_IrqEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnableNoClear
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfgEnable
+</UL>
+
+<P><STRONG><a name="[cf]"></a>R_BSP_IrqEnableNoClear</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, r_gpt.o(.text.R_BSP_IrqEnableNoClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqEnableNoClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[be]"></a>R_BSP_IrqCfg</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, r_icu.o(.text.R_BSP_IrqCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ICU_ExternalIrqOpen
+</UL>
+
+<P><STRONG><a name="[d0]"></a>R_BSP_IrqEnable</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, r_icu.o(.text.R_BSP_IrqEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnableNoClear
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ICU_ExternalIrqEnable
+</UL>
+
+<P><STRONG><a name="[de]"></a>R_BSP_IrqDisable</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, r_icu.o(.text.R_BSP_IrqDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ICU_ExternalIrqClose
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ICU_ExternalIrqDisable
+</UL>
+
+<P><STRONG><a name="[bf]"></a>R_FSP_IsrContextSet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_icu.o(.text.R_FSP_IsrContextSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ICU_ExternalIrqClose
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+</UL>
+
+<P><STRONG><a name="[ca]"></a>R_BSP_IrqClearPending</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_icu.o(.text.R_BSP_IrqClearPending))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[d1]"></a>R_BSP_IrqEnableNoClear</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, r_icu.o(.text.R_BSP_IrqEnableNoClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqEnableNoClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[134]"></a>R_FSP_CurrentIrqGet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_icu.o(.text.R_FSP_CurrentIrqGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_CurrentIrqGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_icu_isr
+</UL>
+
+<P><STRONG><a name="[135]"></a>R_FSP_IsrContextGet</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, r_icu.o(.text.R_FSP_IsrContextGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_FSP_IsrContextGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_icu_isr
+</UL>
+
+<P><STRONG><a name="[cb]"></a>R_BSP_IrqStatusClear</STRONG> (Thumb, 36 bytes, Stack size 4 bytes, r_icu.o(.text.R_BSP_IrqStatusClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_icu_isr
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+
+<P><STRONG><a name="[df]"></a>r_ioport_pins_config</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, r_ioport.o(.text.r_ioport_pins_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_PinAccessDisable
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pfs_write
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_PinAccessEnable
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinsCfg
+</UL>
+
+<P><STRONG><a name="[e0]"></a>bsp_vbatt_init</STRONG> (Thumb, 262 bytes, Stack size 32 bytes, r_ioport.o(.text.bsp_vbatt_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = bsp_vbatt_init &rArr; R_BSP_RegisterProtectEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinCfg
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+
+<P><STRONG><a name="[e1]"></a>R_BSP_PinAccessEnable</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, r_ioport.o(.text.R_BSP_PinAccessEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_BSP_PinAccessEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinCfg
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+
+<P><STRONG><a name="[e2]"></a>r_ioport_pfs_write</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, r_ioport.o(.text.r_ioport_pfs_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = r_ioport_pfs_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinCfg
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+
+<P><STRONG><a name="[e3]"></a>R_BSP_PinAccessDisable</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, r_ioport.o(.text.R_BSP_PinAccessDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_BSP_PinAccessDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinCfg
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+
+<P><STRONG><a name="[e4]"></a>r_ioport_hw_pin_event_output_data_write</STRONG> (Thumb, 120 bytes, Stack size 20 bytes, r_ioport.o(.text.r_ioport_hw_pin_event_output_data_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = r_ioport_hw_pin_event_output_data_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinEventOutputWrite
+</UL>
+
+<P><STRONG><a name="[e5]"></a>R_BSP_PinRead</STRONG> (Thumb, 38 bytes, Stack size 4 bytes, r_ioport.o(.text.R_BSP_PinRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_BSP_PinRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinRead
+</UL>
+
+<P><STRONG><a name="[e9]"></a>r_sci_irqs_cfg</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, r_sci_uart.o(.text.r_sci_irqs_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = r_sci_irqs_cfg &rArr; r_sci_irq_cfg &rArr; R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irq_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Open
+</UL>
+
+<P><STRONG><a name="[e6]"></a>r_sci_negate_de_pin</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, r_sci_uart.o(.text.r_sci_negate_de_pin))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = r_sci_negate_de_pin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Close
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Abort
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Open
+</UL>
+
+<P><STRONG><a name="[ea]"></a>r_sci_uart_config_set</STRONG> (Thumb, 284 bytes, Stack size 32 bytes, r_sci_uart.o(.text.r_sci_uart_config_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = r_sci_uart_config_set &rArr; r_sci_uart_baud_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_baud_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Open
+</UL>
+
+<P><STRONG><a name="[d2]"></a>R_BSP_IrqEnable</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, r_sci_uart.o(.text.R_BSP_IrqEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_BSP_IrqEnable &rArr; R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnableNoClear
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Open
+</UL>
+
+<P><STRONG><a name="[e7]"></a>r_sci_uart_baud_set</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, r_sci_uart.o(.text.r_sci_uart_baud_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = r_sci_uart_baud_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_BaudSet
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_config_set
+</UL>
+
+<P><STRONG><a name="[e8]"></a>R_BSP_IrqDisable</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_BSP_IrqDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Close
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irq_cfg
+</UL>
+
+<P><STRONG><a name="[136]"></a>r_sci_irq_cfg</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, r_sci_uart.o(.text.r_sci_irq_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = r_sci_irq_cfg &rArr; R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irqs_cfg
+</UL>
+
+<P><STRONG><a name="[cc]"></a>R_BSP_IrqClearPending</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_sci_uart.o(.text.R_BSP_IrqClearPending))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = R_BSP_IrqClearPending &rArr; R_BSP_IrqStatusClear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[d3]"></a>R_BSP_IrqEnableNoClear</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_BSP_IrqEnableNoClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_IrqEnableNoClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqEnable
+</UL>
+
+<P><STRONG><a name="[137]"></a>R_FSP_CurrentIrqGet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_FSP_CurrentIrqGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_CurrentIrqGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_txi_isr
+</UL>
+
+<P><STRONG><a name="[cd]"></a>R_BSP_IrqStatusClear</STRONG> (Thumb, 36 bytes, Stack size 4 bytes, r_sci_uart.o(.text.R_BSP_IrqStatusClear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_BSP_IrqStatusClear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_txi_isr
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqClearPending
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irq_cfg
+</UL>
+
+<P><STRONG><a name="[138]"></a>R_FSP_IsrContextGet</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, r_sci_uart.o(.text.R_FSP_IsrContextGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_FSP_IsrContextGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_txi_isr
+</UL>
+
+<P><STRONG><a name="[139]"></a>r_sci_uart_call_callback</STRONG> (Thumb, 124 bytes, Stack size 40 bytes, r_sci_uart.o(.text.r_sci_uart_call_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = r_sci_uart_call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_txi_isr
+</UL>
+
+<P><STRONG><a name="[c0]"></a>R_BSP_IrqCfg</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, r_sci_uart.o(.text.R_BSP_IrqCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_BSP_IrqCfg &rArr; R_FSP_IsrContextSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_irq_cfg
+</UL>
+
+<P><STRONG><a name="[c1]"></a>R_FSP_IsrContextSet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_FSP_IsrContextSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_FSP_IsrContextSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_IrqCfg
+</UL>
+
+<P><STRONG><a name="[13d]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[13b]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
+</UL>
+
+<P><STRONG><a name="[140]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[13f]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[16]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printfa.o(i._sputc))
+<BR><BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0sprintf)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

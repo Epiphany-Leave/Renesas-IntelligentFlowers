@@ -1,0 +1,34 @@
+<!--pages/manual/manual.wxml-->
+<view class="container">
+  <view class="switch-wrapper">
+    <image class="switch-icon" src="../images/switch.png" />
+    <van-switch class="switch" checked="{{mainSwitch}}" bind:change="onMainSwitchChange" />
+    <text class="switch-label">手动模式</text>
+  </view>
+  <view class="switch-list">
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/pump.png" />
+      <van-switch class="switch" checked="{{pumpSwitch}}" disabled="{{!mainSwitch}}" bind:change="onPumpSwitchChange" />
+      <text class="switch-label">水泵</text>
+    </view>
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/fan.png" />
+      <van-switch class="switch" checked="{{fanSwitch}}" disabled="{{!mainSwitch}}" bind:change="onFanSwitchChange" />
+      <text class="switch-label">松土</text>
+    </view>
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/light.png" />
+      <van-switch class="switch" checked="{{lightSwitch}}" disabled="{{!mainSwitch}}" bind:change="onLightSwitchChange" />
+      <text class="switch-label">补光</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+

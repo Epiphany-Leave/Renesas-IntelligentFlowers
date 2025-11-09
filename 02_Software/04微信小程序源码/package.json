@@ -1,0 +1,6 @@
+{
+  "description": "",
+  "dependencies": {
+    "@vant/weapp": "^1.11.6"
+  }
+}

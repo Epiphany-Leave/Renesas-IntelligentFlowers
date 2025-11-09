@@ -1,0 +1,45 @@
+<!--pages/automatic/automatic.wxml-->
+<view class="automatic-container">
+  <view class="switch-wrapper">
+    <image class="switch-icon" src="../images/switch.png" />
+    <van-switch class="switch" checked="{{mainSwitch}}" bind:change="onMainSwitchChange" />
+    <text class="switch-label">自动模式</text>
+  </view>
+  <view class="switch-list">
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/pump.png" />
+      <van-switch class="switch" checked="{{pumpSwitch}}" disabled="{{!mainSwitch}}" bind:change="onPumpSwitchChange" />
+      <text class="switch-label">松土</text>
+    </view>
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/fan.png" />
+      <van-switch class="switch" checked="{{fanSwitch}}" disabled="{{!mainSwitch}}" bind:change="onFanSwitchChange" />
+      <text class="switch-label">风扇</text>
+    </view>
+    <view class="switch-item">
+      <image class="switch-icon" src="../images/light.png" />
+      <van-switch class="switch" checked="{{lightSwitch}}" disabled="{{!mainSwitch}}" bind:change="onLightSwitchChange" />
+      <text class="switch-label">补光</text>
+    </view>
+  </view>
+  <view class="plant-selection">
+    <view class="plant-image-wrapper">
+      <image class="plant-image" src="{{plantInfo[selectedPlant].image}}" />
+    </view>
+    <view class="plant-nav-wrapper">
+      <image class="plant-nav-btn" src="../images/左键.png" bindtap="prevPlant" />
+      <text class="plant-name">{{plantOptions[selectedPlant].text}}</text>
+      <image class="plant-nav-btn" src="../images/右键.png" bindtap="nextPlant" />
+    </view>
+    <view class="plant-description-wrapper">
+      <text class="plant-description">{{plantInfo[selectedPlant].description}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+

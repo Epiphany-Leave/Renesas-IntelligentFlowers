@@ -1,0 +1,95 @@
+/* automatic.wxss */
+.automatic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* 确保背景覆盖整个界面 */
+  background: linear-gradient(135deg, #e0f7fa, #e0ffe0); /* 淡蓝到淡绿渐变 */
+}
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.switch-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.switch {
+  margin-right: 10px;
+}
+.switch-label {
+  color: #000; /* 默认颜色为黑色 */
+}
+.switch[checked] .switch-label {
+  color: #ff8c94; /* 开启后颜色为淡红色 */
+}
+.switch-list {
+  width: 100%; /* 使开关列表占满整个宽度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* 添加等距 */
+}
+.switch-item {
+  display: flex;
+  align-items: center;
+}
+.plant-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.plant-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.plant-image {
+  width: 100px;
+  height: 100px;
+}
+.plant-nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.plant-nav-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #d0f0c0; /* 淡绿色 */
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.plant-name {
+  font-weight: bold;
+  margin: 0 10px;
+}
+.plant-description-wrapper {
+  margin-top: 10px;
+  text-align: left;
+  width: 90%; /* 确保简介部分有合适的宽度 */
+}
+.plant-description {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+
+
+
+
+
+
+

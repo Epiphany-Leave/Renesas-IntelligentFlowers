@@ -1,0 +1,17 @@
+/*
+ * app.h
+ *
+ *  Created on: 2023年3月31日
+ *      Author: slhuan
+ */
+
+
+void WiFiBtAppTest(void);
+void DeviceTest(void);
+void ADCAppTest(void);
+void BH1750Test(void);
+		MHTest(ptMHDev);
+		
+		MQTest(ptMQDev);
+		
+		PHTest(ptPHDev);

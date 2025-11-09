@@ -1,0 +1,46 @@
+/* pages/manual/manual.wxss */
+.container {
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f8ff, #faebd7); /* Adjust colors as needed */
+}
+
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switch-list {
+  margin-top: 20px;
+}
+
+.switch-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switch-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.switch {
+  margin-right: 10px;
+}
+
+.switch-label {
+  color: #000; /* 默认颜色为黑色 */
+}
+
+/* 选择器改变颜色 */
+.switch[checked] + .switch-label {
+  color: #ff8c94; /* 开启后颜色为淡红色 */
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/manual/manual",
+    "pages/automatic/automatic",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灵植慧生",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "用户",
+        "iconPath": "pages/images/user.png",
+        "selectedIconPath": "pages/images/user_active.png"
+      },
+      {
+        "pagePath": "pages/manual/manual",
+        "text": "手动",
+        "iconPath": "pages/images/manual.png",
+        "selectedIconPath": "pages/images/manual_active.png"
+      },
+      {
+        "pagePath": "pages/automatic/automatic",
+        "text": "自动",
+        "iconPath": "pages/images/automatic.png",
+        "selectedIconPath": "pages/images/automatic_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
+
+
+

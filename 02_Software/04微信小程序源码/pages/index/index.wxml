@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <image class="avatar" src="../images/head.jpg" />
+  <view class="data-list">
+    <block wx:for="{{dataList}}" wx:key="name">
+      <view class="data-item">
+        <image class="data-icon" src="{{item.icon}}" />
+        <text class="data-name">{{item.name}}</text>
+        <text class="data-value">{{item.value}}</text>
+      </view>
+    </block>
+  </view>
+</view> -->
+
+<view class="background-container">
+  <image class="background-image" src="../images/background.jpg" />
+  <view class="content-container">
+    <!-- existing content -->
+    <view class="container">
+      <image class="avatar" src="../images/head.jpg" />
+      <view class="data-list">
+        <block wx:for="{{dataList}}" wx:key="name">
+          <view class="data-item">
+            <image class="data-icon" src="{{item.icon}}" />
+            <text class="data-name">{{item.name}}</text>
+            <text class="data-value">{{item.value}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <view class="chart-container">
+    <qiun-wx-ucharts 
+      type="line" 
+      opts="{{chartOpts}}" 
+      chartData="{{chartData}}" 
+      canvas2d="{{true}}"
+      canvasId="sensorChart"/>
+  </view>
+</view>
+
+
+
+

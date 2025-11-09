@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "qiun-wx-ucharts":"/components/qiun-wx-ucharts/src/index"
+  }
+}
+
+

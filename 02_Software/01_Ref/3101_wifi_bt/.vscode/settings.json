@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "devices.h": "c",
+        "hal_data.h": "c",
+        "stdio.h": "c",
+        "errno.h": "c",
+        "dev_wifi_bt.h": "c"
+    }
+}
